@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-langage = {'Python': 'Guido van Rossum', 'Ruby': 'Yukihiro Matsumoto', 'PHP': 'Rasmus Lerdorf', '~/Source code': 'Ethan Safar'}
+langage = {'Python': 'Guido van Rossum', 'Ruby': 'Yukihiro Matsumoto', 'PHP': 'Rasmus Lerdorf', '~/this code': 'Ethan Safar'}
 
 for c, founder in langage.items():
     print(c, 'was created by', founder)
