@@ -15,6 +15,7 @@ import random
 count = 1
 success = 0
 to_guess = random.randint(1, 99)
+# to_guess = 42
 
 print("This is an interactive guessing game!")
 print("You have to enter a number between 1 and 99 to find out the secret number.")
@@ -29,7 +30,12 @@ elif entry.isdigit():
     while success == 0:
         if entry.isdigit():
             if int(entry) == int(to_guess):
-                print("Congratulations, you've got it!")
+                if int(entry) == 42:
+                    print("The answer to the ultimate question of life, the universe and everything is 42.")
+                if count == 1:
+                    print("Congratulations, you've got it on your first try!")
+                else:
+                    print("Congratulations, you've got it!")
                 success = 1
             else:
                 if int(entry) < int(to_guess):
@@ -48,4 +54,5 @@ elif entry.isdigit():
                 print("That's not a number.")
                 entry = input(">> ")
 if success == 1:
-    print("You won in", count, "attempts!")
+    if count != 1:
+        print("You won in", count, "attempts!")
