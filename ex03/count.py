@@ -14,7 +14,6 @@ import string
 import sys
 
 def text_analyzer(sentence):
-        print('Error.')
     a = int(0);
     b = int(0);
     c = int(0);
